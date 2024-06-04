@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Creations.</title>
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="stylesheet" href="/styles/perfil.css">
+  <link rel="stylesheet" href="/styles/cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--=============== REMIXICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+  <!--=============== SWIPER CSS ===============-->
+  <link rel="stylesheet" href="styles/swiper-bundle.min.css">
+
+  <link rel="icon" href="favicon-pro.png" type="image/png">
+</head>
+
+<body>
+  <nav class="nav-wrapper">
+    <a href="#" class="brand-logo"><img src="/logo-proyect-r.png" alt="Logo" /></a>
+    <div class="menu-mobile">
+      <ul class="list-menu">
+        <li><a href="/index.html" >Inicio</a></li>
+        <li><a href="/pages/page-catalogo.html" >Catálogo</a></li>
+        <li class="user-logged"><a href="/pages/page-productos.html" >Mis Productos</a></li>
+        <li class="user-logged"><a href="/pages/page-compras.html" >Mis Compras</a></li>
+        <li><a href="/pages/page-blog.html" >Comunidad</a></li>
+        <li><a href="/pages/page-contacto.html" >Contacto</a></li>
+      </ul>
+
+      <div class="container-btns logged-true">
+        <a href="/pages/page-login.html" class="btn-login">
+          <button class="btn-log">Iniciar Sesión</button>
+        </a>
+        <a href="/pages/page-registro.html" class="btn-register">
+          <button class="btn-log">Registrarse</button>
+        </a>
+        <div class="btn-menu">
+          <div id="open-cart" class="icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="btn-text">Carrito</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="user-logged btn-menu">
+        <a class="icon" href="/favicon-pro.png">
+          <i class="fas fa-user"></i>
+          <span class="btn-text">Perfil</span>
+        </a>
+        <div id="open-cart" class="icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="btn-text">Carrito</span>
+        </div>
+      </div>
+      <div class="icon-close">
+        <i class="fas fa-times"></i>
+      </div>
+    </div>
+    <div class="icon-mobile">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <section class="container-profile">
+    <div class="profile">
+      <div class="profile-header">
+        <div class="profile-im">
+          <img class="profile-img" src="/favicon-pro.png" alt="Profile Image" />
+          <button class="log-out" onclick="logout()">Cerrar sesión  <i class="fas fa-sign-out-alt icon-btn"></i></button>
+        </div>
+        <div class="profile-info">
+          <h2 id="user-name">Lore</h2>
+          <p id="user-email">lore@gmail.com</p>
+          <p>País - Colombia</p>
+        </div>
+      </div>
+      <div class="profile-content">
+        <div class="profile-menu">
+          <h3>Acceso rápido</h3>
+          <ul>
+            <li><a href="/pages/page-productos.html">Mis Productos</a></li>
+            <li><a href="/pages/page-compras.html">Mis Compras</a></li>
+            <li><a href="/pages/page-blog.html">Comunidad</a></li>
+          </ul>
+        </div>
+        <input class="btn-sell" type="button" value="¿Deseas vender?" >
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Suscríbete a Nuestro Boletín</h2>
+    <form>
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Suscribirse</button>
+    </form>
+</section>
+
+  <footer>
+    <img src="logo-proyect.png" alt="Logo Digital Creations Ltd.">
+
+    <div class="footer-container">
+        
+        <ul class="footer-icons">
+            <li><a href="#">Políticas</a></li>
+            <li><a href="#">Derechos</a></li>
+            <li>
+                <!-- Ícono de WhatsApp -->
+                <a href="https://wa.me/3136193210" target="_blank">
+                    <i class="ri-whatsapp-line"></i>
+                </a>
+            </li>
+            <li>
+                <!-- Ícono de LinkedIn -->
+                <a href="https://www.linkedin.com/in/loremonmu/" target="_blank">
+                    <i class="ri-linkedin-line"></i>
+                </a>
+            </li>
+            <li>
+                <!-- Ícono de Instagram -->
+                <a href="https://www.instagram.com/loremonmu" target="_blank">
+                    <i class="ri-instagram-line"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    
+</footer>
+
+  <section id="id-container-cart" class="container-cart">
+    <div class="items-contain">
+      <h1>Carrito</h1>
+      <i id="close-btn" class="fa fa-close"></i>
+    </div>
+    <div id="cart-section">
+      <!-- Aquí se renderizarán los productos del carrito -->
+    </div>
+    <div class="subtotal">
+      <h3>Total</h3>
+      <h3 id="total-cart"></h3>
+    </div>
+    <div class="company-info">
+      <img src="/favicon-pro.png" alt="Logo" />
+      <h4>Digital Creations.</h4>
+      <span>2024 &copy;</span>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/session.js"></script>
+  <script src="/js/cart.js"></script>
+</body>
+
+</html>

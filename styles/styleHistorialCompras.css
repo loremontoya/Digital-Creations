@@ -1,0 +1,136 @@
+/* Inicio Banner de 1 imagen*/
+
+.banner-contentimg {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden
+}
+
+.banner-contentimg #banner.img {
+  width: 100%;
+  /* Hace que la imagen se ajuste al ancho del contenedor */
+  height: auto;
+  /* Permite que la altura se ajuste automáticamente */
+  display: block;
+  /* Elimina el espacio en blanco debajo de la imagen */
+}
+
+
+.banner-contentimg h1 {
+  margin: 0;
+  padding: 10px;
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: #800020;
+  border-radius: 0 0 15px 15px;
+  color: #fff;
+}
+
+img.centrarim {
+  /* text-align: center; */
+  display: inline-block;
+}
+
+/*Fin Banner de 1 imagen*/
+
+.historial-shopping {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #e04545;
+  margin-bottom: 20px;
+}
+
+.historial-shopping img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+  filter: grayscale(80%) hue-rotate(180deg);
+}
+
+/* inicio de newsletter */
+
+.newsletter {
+  /* background-color: #7c6d6d; */
+  color: #800020;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter form label, .newsletter form input, .newsletter form button {
+  width: 100%;
+  max-width: 300px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.newsletter form button {
+  background-color: #a52a2a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter form button:hover {
+  background-color: #c84c4c;
+}
+
+/* inicio de footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  
+  
+}
+
+footer img {
+  height: 50px;
+}
+
+/* Estilos del footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-icons li:last-child {
+  margin-right: 0;
+}
+
+.footer-icons a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #c84c4c; /* Cambia de color al pasar el mouse */
+}

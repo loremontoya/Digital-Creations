@@ -1,0 +1,195 @@
+
+
+/* Inicio Banner de 1 imagen*/
+
+.banner-contentimg {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden
+}
+.banner-contentimg img {
+  width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  display: block; /* Elimina el espacio en blanco debajo de la imagen */
+}
+.banner-contentimg h1 {
+  margin: 0;
+  padding: 10px;
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: #800020;
+  border-radius: 0 0 15px 15px;
+  color: #fff;
+}
+/*Fin Banner de 1 imagen*/
+.wrapper {
+  width: 85%;
+  margin: 0 auto;
+}
+#buscar-container {
+  margin: 1em 0;
+}
+#buscar-container input {
+  background-color: transparent;
+  width: 35%;
+  border: 3px solid #e04545;
+  padding: 1em 0.3em;
+  /* margin-left: 2em; */
+  border-radius: 10px;
+}
+
+#buscar-container input:focus {
+  border-bottom-color: #e04545;
+}
+#buscar-container button {
+  padding: 1em 2em;
+  margin-left: em;
+  background-color: #800020;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-top: 0.5em;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+#buscar-container button:hover {
+  padding: 1em 2em;
+  margin-left: em;
+  background-color: #e04545;
+  color: #ffffff;
+  border-radius: 20px;
+  margin-top: 0.5em;
+  border: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.button-value {
+  border: 4px solid #e04545;
+  padding: 1em 2.1em;
+  border-radius: 3em;
+  background-color: transparent;
+  color: #800020;
+  cursor: pointer;
+  margin-top: 1%;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+.button-value.active {
+  background-color: #800020;
+  color: #ffffff;
+}
+#products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1.1em;
+  padding: 1em 0;
+  justify-content: center;
+}
+.card {
+  background-color: #800020;
+  max-width: 20em;
+  margin-top: 1em;
+  padding: 0;
+  border-radius: 20px;
+  box-shadow: 0 6px 6px 0 rgb(155, 220, 236), 0 6px 20px 0 rgba(36, 28, 28, 0.19);
+  float: left; 
+}
+.image-container {
+  position: relative;
+  /*background-color: white;
+  padding-top: 1.5rem;*/
+  margin-bottom: -0.75rem;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+  
+}
+.imageLista {
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  height: 15em;
+  border-radius: 20px 20px 0 0;
+  
+}
+.container {
+  padding: 1.5rem 1.5rem;
+  border-radius: 0 0 20px 20px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 180px;
+}
+.container h5 {
+  font-size: 1.25rem;
+  color: #e04545;
+}
+.container h6 {
+font-weight: 500;
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+    color: white;
+}
+.hide {
+  display: none;
+}
+
+/* Estilos para el botón Añadir al carrito */
+.add-to-cart-button {
+ 
+  display: inline-block;
+  background-color: #f48989;
+  padding: .75rem 1.5rem;
+  border-radius: .25rem;
+  color: #800020;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+/* Estilo para el icono dentro del botón */
+button i {
+  margin-left: 5px; /* Margen izquierdo para separar el icono del texto */
+}
+
+/* Cambio de color al pasar el cursor por encima */
+.add-to-cart-button:hover {
+  background-color: #fff; 
+  color: #e04545; 
+}
+
+
+@media screen and (max-width: 1024px){
+  #products {
+    grid-template-columns: auto auto;
+    grid-column-gap: 1em;
+  }
+}
+@media screen and (max-width: 720px) {
+  /* img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+  } */
+  .card {
+    max-width: 20em;
+    margin-top: 1em;
+  }
+  #products {
+    grid-template-columns: auto auto;
+    grid-column-gap: 1em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #products {
+    grid-template-columns: auto;
+    grid-column-gap: 1em;
+  }
+  #buscar-container input {
+    width: 60%;
+  }
+}

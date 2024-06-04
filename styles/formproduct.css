@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap");
+
+/* Inicio Banner de 1 imagen*/
+
+.banner-contentimg {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden
+}
+
+.banner-contentimg img {
+  width: 100%; /* Hace que la imagen se ajuste al ancho del contenedor */
+  height: auto; /* Permite que la altura se ajuste automáticamente */
+  display: block; /* Elimina el espacio en blanco debajo de la imagen */
+}
+
+
+.banner-contentimg h1 {
+  margin: 0;
+  padding: 10px;
+  font-size: 2.4rem;
+  text-align: center;
+  background-color: #800020;
+  border-radius: 0 0 15px 15px;
+  color: #fff;
+}
+
+/*Fin Banner de 1 imagen*/
+
+img.iconlogo {
+  display: block;
+  margin: 0 auto;
+  width: 7%;
+  margin-bottom: -11px;
+}
+
+img.formatofot {
+  width: 66%;
+}
+
+h3.unet  {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: center;
+  color: #800020;
+  margin-bottom: auto;
+}
+p.sosteni  {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  
+}
+
+h3.textname {
+  font-size: 1.5rem !important;
+  color: #800020;
+  
+}
+
+h3.ayud  {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  color: #800020;
+  margin-bottom: auto;
+}
+
+.divs-secti {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+ 
+}
+
+.contrainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to right, #f2747461, rgb(6 68 102 / 15%));
+  padding: 30px;
+  width: 100%;
+  margin-bottom: -113px;
+}
+
+/* Parte inicio de formulario vender  */
+.form-container {
+  margin: 20px auto;
+  padding: 53px;
+  /*background-color: #fff;*/
+  border-radius: 8px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 32%;
+  }
+
+  .container-grid-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    place-items: center;
+    padding: 3rem 0;
+  }
+  .div-item-grid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .sell-button {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    display: block;
+    width: 100%;
+    padding: 25px;
+    background: #800020;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .sell-button:hover {
+    background: #a52a2a;
+    color: #fff;
+  }
+  
+  .form-section {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  select,
+  input[type="file"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .image-upload-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  input[type="file"] {
+    width: auto;
+    background-color: #e7e7e7;
+  }
+  
+  input[type="submit"] {
+    background-color: #800020;
+    color: white;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #a52a2a;
+  }
+  
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);  
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+  }
+  /* esta es la parte de cerrar la pestaña del formulario */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  }
+  /* Fin formulario compras*/
+
+  /* inicio de newsletter */
+
+.newsletter {
+  /* background-color: #7c6d6d; */
+  color: #800020;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newsletter form label, .newsletter form input, .newsletter form button {
+  width: 100%;
+  max-width: 300px;
+  margin: 5px;
+  padding: 10px;
+}
+
+.newsletter form button {
+  background-color: #a52a2a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter form button:hover {
+  background-color: #c84c4c;
+}
+
+/* inicio de footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  
+  
+}
+
+footer img {
+  height: 50px;
+}
+
+/* Estilos del footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.footer-icons li:last-child {
+  margin-right: 0;
+}
+
+.footer-icons a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #c84c4c; /* Cambia de color al pasar el mouse */
+}
+
+  @media screen and (max-width: 1024px){
+    .container-grid-items{
+      grid-template-columns: 1fr 1fr;
+    }
+    .center {
+      grid-column: span 2; /* Este elemento ocupará las dos columnas disponibles */
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .form-container {
+      padding: 53px 0;
+      width: auto;
+    }
+    .sell-button {
+      width: auto;
+    }
+    .container-grid-items{
+      grid-template-columns: 1fr;
+    }
+    .center {
+      grid-column: span 1; /* Este elemento ocupará las dos columnas disponibles */
+    }
+  }
+
+  
